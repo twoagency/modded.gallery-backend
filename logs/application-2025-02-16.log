@@ -1,0 +1,10 @@
+{"level":"info","message":"Called","requestId":"89de62a6-2696-434a-989f-a5a774b0da56","route":"/api/apps/new","timestamp":"2025-02-16T21:26:56.201Z"}
+{"level":"debug","message":"Parsing JSON body","requestId":"89de62a6-2696-434a-989f-a5a774b0da56","route":"/api/apps/new","timestamp":"2025-02-16T21:26:56.204Z"}
+{"level":"debug","message":"Converting features/platforms to JSON strings","requestId":"89de62a6-2696-434a-989f-a5a774b0da56","route":"/api/apps/new","timestamp":"2025-02-16T21:26:56.204Z"}
+{"level":"debug","message":"Inserting into database","requestId":"89de62a6-2696-434a-989f-a5a774b0da56","route":"/api/apps/new","timestamp":"2025-02-16T21:26:56.205Z"}
+{"level":"info","message":"Insert successful","requestId":"89de62a6-2696-434a-989f-a5a774b0da56","route":"/api/apps/new","timestamp":"2025-02-16T21:26:56.521Z"}
+{"level":"info","message":"Called","requestId":"d0b1ca7c-64bf-447b-a7ad-cc91fdc885da","route":"/api/apps/new","timestamp":"2025-02-16T21:35:47.807Z"}
+{"level":"debug","message":"Parsing JSON body","requestId":"d0b1ca7c-64bf-447b-a7ad-cc91fdc885da","route":"/api/apps/new","timestamp":"2025-02-16T21:35:47.809Z"}
+{"level":"debug","message":"Converting features/platforms to JSON strings","requestId":"d0b1ca7c-64bf-447b-a7ad-cc91fdc885da","route":"/api/apps/new","timestamp":"2025-02-16T21:35:47.810Z"}
+{"level":"debug","message":"Inserting into database","requestId":"d0b1ca7c-64bf-447b-a7ad-cc91fdc885da","route":"/api/apps/new","timestamp":"2025-02-16T21:35:47.810Z"}
+{"level":"info","message":"Insert successful","requestId":"d0b1ca7c-64bf-447b-a7ad-cc91fdc885da","route":"/api/apps/new","timestamp":"2025-02-16T21:35:48.189Z"}
