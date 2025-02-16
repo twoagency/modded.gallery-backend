@@ -7,8 +7,9 @@ The platform is a **curated directory of trusted modded apps** (e.g., TikTokMo
 - **Goal**: Provide a reliable, transparent, and secure resource for users.
 
 ---
-[API Routes](./API_ROUTES.md)
-[Database Schema](./DATABASE_SCHEMA.md)
+### [API Routes](./API_ROUTES.md)
+
+### [Database Schema](./DATABASE_SCHEMA.md)
 ---
 
 ### **Core Features (v1)**
