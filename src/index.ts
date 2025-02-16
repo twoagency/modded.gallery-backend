@@ -8,7 +8,7 @@ const port = 3000;
 
 app.use("*", contextMiddleware);
 
-app.post('api/apps/new', (c) => newAppRoute(c));
+app.post('api/admin/apps/new', (c) => newAppRoute(c));
 
 console.log(`Started development server: http://localhost:${port}`);
 
