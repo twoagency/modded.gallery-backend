@@ -1,4 +1,3 @@
-// schema.ts
 import { pgTable, serial, varchar, text, boolean, jsonb } from "drizzle-orm/pg-core";
 
 export const appsTable = pgTable("apps", {
