@@ -1,14 +1,13 @@
 import { Context } from "hono";
-import { HttpStatusCode, statusReponse } from "../../utils";
-import { object, string, array, boolean, parse, ValiError, optional } from 'valibot';
-import db from "../../db/db";
-import { appsTable } from "../../db/schema";
+import { object, string, array, boolean, parse, description } from 'valibot';
+import { HttpStatusCode, statusReponse } from "../../../utils";
+import db from "../../../db/db";
+import { appsTable } from "../../../db/schema";
 
 const RequestSchema = object({
     name: string(),
     normal_app: string(),
-    description: string(),
-    features: array(string()),
+    description: array(string()),
     platforms: array(string()),
     official_links: array(
         object({
@@ -39,17 +38,18 @@ export default async function newAppRoute(context: Context) {
       logger.debug("Converting features/platforms to JSON strings");
       const dbData = {
         ...json,
-        features: JSON.stringify(json.features),
-        platforms: JSON.stringify(json.platforms)
+        normal_app: json.normal_app.toLowerCase(),
+        platforms: JSON.stringify(json.platforms),
+        description: JSON.stringify(json.description)
       };
   
       logger.debug("Inserting into database");
       await db.insert(appsTable).values(dbData);
   
-      return statusReponse(requestId, "OK", "", [], HttpStatusCode.OK, context);
-  
+      logger.debug("Finished request");
+      return statusReponse(requestId, "OK", "Successfully added new app.", [], HttpStatusCode.OK, context);
     } catch (error) {
-      logger.error("Database error", { error }); // 👈 Fehlerobjekt loggen
+      logger.error("Database error", { error });
       return statusReponse(requestId, "ERR", "Internal error", [], HttpStatusCode.InternalServerError, context);
     }
   }
