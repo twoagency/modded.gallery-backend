@@ -1,7 +1,7 @@
 {
   "name": "modded.gallery",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun pm cache clean && bun run --hot src/index.ts"
   },
   "dependencies": {
     "chalk": "^5.4.1",
