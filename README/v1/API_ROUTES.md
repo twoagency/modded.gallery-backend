@@ -89,23 +89,6 @@
 
 ---
 
-### **5. Admin: Mark as Recommended**
-
-- **Route**: `POST /api/admin/apps/:id/recommend`
-- **Success Response**:
-    
-    ```json
-    {
-      "status": "OK",
-      "message": "App marked as recommended.",
-      "data": []
-    }
-    
-    ```
-    
-
----
-
 All responses follow the format:
 
 ```json

@@ -46,7 +46,6 @@ The platform is a **curated directory of trusted modded apps** (e.g., TikTokMo
 | `/api/admin/apps` | POST | Add a new app. |
 | `/api/admin/apps/:id` | PUT | Update an app. |
 | `/api/admin/apps/:id` | DELETE | Delete an app. |
-| `/api/admin/apps/:id/recommend` | POST | Mark an app as "Recommended". |
 
 ---
 
